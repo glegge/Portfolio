@@ -1,8 +1,5 @@
 
 /*-- General Styles --*/
-{
- 
-}
 body{
   background-color: rgb(139, 140, 160);
   margin: 0px;
@@ -32,14 +29,14 @@ footer p{
  color: white;
  padding: 27px;
  }
-
+/*-- Used to sytle the name at the top of the page--*/
 .logo{
  font-family: 'Times New Roman', Times, serif;
  font-size: 72px;
  color: white;
  text-align: center
 }
-
+/*-- used center the profil picture--*/
 .picCenter{
   margin-left:auto;
   margin-right:auto;
@@ -59,12 +56,17 @@ a:link { color: blue; }
 a:visited { color: purple; }
 a:hover { color: lightblue; }
 a:active { color: red; }
-
+/*-- used to remove border around the webpage--*/ 
 .margin{
   margin: 75px,20px;
 }
-
+/*-- Used to center the ordered and unordered list --*/
 .center{
   width: 100px;
   margin:0 auto;
+}
+
+hr{
+  border-color:black;
+  width: 350px;
 }
