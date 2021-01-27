@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width initial-scale=1">
     <title>Gregory's Portfoilo</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
@@ -11,50 +11,103 @@
     
     <header>
       <div class=logo>Gregory Legge Jr</div>
-      <h2>Software Developer! </h2>
+      <nav>
+        <ul id = "menu">
+          <li><a href = "#home">Home</a></li>
+          <li><a href = "#about">About</a></li>  
+          <li><a href = "#projects">Projects</a></li> 
+          <li><a href = "#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
       <!-- intro -->
-      <section class="textCenter">
-      <h1>Hello! My name is Gregory Legge Jr.</h1>
-      <img class="picCenter" src="images/profile.jpg" width="500" alt="temp Profile Pic">
-      <p class="margin">I am a Software Developer, located in Baltimore, MD.</p>
-      <h3>These are the programming langues i have experience in:</h3>
-     <div class="center">
-       <ol>
-         <li> JavaScript</li>
-         <li> Html</li>
-         <li> CSS</li>
-         <li> Python</li>
-       </ol>
-      </div>  
+      <section id="home">
+      <div class = "group">
+        <div class = "item">
+         <img class="picCenter" src="images/profile.jpg" width="500" alt="temp Profile Pic">
+        </div>
+        <div clas = "item"> 
+          <h1>Hello! My name is Gregory Legge Jr.</h1>
+          <p>I am a software developer, working out of Baltiimore, Maryland.</p>
+        </div>
+        <p></p>
+      </div> 
      </section>
-      <section class="textCenter">
-      <!-- About Me -->      
-      <hr>
-      <h2>About Me!</h2>
-      <p>Growing up, I always wanted to become an actor, but as the years went on, I found that had a passion for problem solving and computers. Which in turn spark a love for software developmet.</p>
-      <p>To help launch a career in software development I became a student at thinkful.</p>
-      <p> If you are looking to hire new developer, please do not hesitate to reach out to me. I am always looking forward to work with new people to develop new software!
+
+
+
+     <!-- About Me-->
+      <section id="about" class="lightBackground">    
+        <h2>About Me!</h2>
+        <div class="group">
+          <div class = "item">
+            <p>
+              Growing up, I always wanted to become an actor, but as the years went on, 
+              I found that had a passion for problem solving and computers. 
+              Which in turn spark a love for software developmet.
+              To help launch a career in software development I became a student at thinkful.
+              If you are looking to hire new developer, please do not hesitate to reach out to me. 
+              I am always looking forward to work with new people to develop new software!
+            </p>
+          </div>
+        </div> 
       </section>
+
+
+
+      <!-- Projects-->
+      <section id="projects">
+        <h2>Projects!</h2>
+        <div class="group">
+          <div class="item">
+            <img src="images\projects\placeHolder.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>This will be added at a later date.</p>
+          </div>
+          <div class="item">
+            <img src="images\projects\placeHolder.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>This will be added at a later date.</p>
+          </div>
+        </div>
+      </section>
+
+
+
       <!-- Contacts -->
-      <hr>
-      <section>
+      <section id="contact">
       <h2>Contact Me!</h2>
-      <p class="textCenter">I look forward to hearing from you. Please feel free to contact me at:</p>
-      <div class="center">
-      <ul>
-        <li>
-          <a href="mailto:gregorylegge15@gmail.com" target="_blank"> Email </a>
-        </li>
-        <li>
-          <a href="https://www.github.com/glegge" target="_blank"> Github </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/gregory-legge-ba93691a2/" target="_blank"> Linkedin </a>
-      </ul> 
+      <h4>I look forward to hearing from you. Please feel free to contact me.</h4>
+      <div class = "group">
+      <div class = item>
+        <form action= "https://formspree.io/f/meqpndab" method="POST">
+          <label for="name" class= "labelColor">Name:</label>
+          <input id= "name" type="text" name="name" />
+          <label for="email" class= "labelColor">Email:</label>
+          <input type="text" name="email" id="email">
+          <label for="form-message" class= "labelColor">Your Message:</label>
+          <textarea name="message" id="form" cols="30" rows="10"></textarea>
+          <button type="submit">Submit</button>
+      </form>
       </div>
+      <div class="item">
+          <a href="mailto:gregorylegge15@gmail.com" target="_blank"> 
+            <img src="images\at-sign-icon-9.jpg" alt="Project 1">
+           </a>
+      </div>
+      <div class="item">
+        <a href="https://www.github.com/glegge" target="_blank"> 
+          <img src="images\Git.png" alt="Project 1">
+         </a>
+    </div>
+    <div class="item">
+      <a href="https://www.linkedin.com/in/gregory-legge-ba93691a2/" target="_blank"> 
+        <img src="images\Linked.png" alt="Project 1">
+       </a>
+  </div>
+    </div>
       </section>
    </main>
 

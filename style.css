@@ -1,14 +1,57 @@
+/* Flex */
+.group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item{
+  flex: 1;
+  margin: 10px;
+  align-items: auto;
+}
+
+/* Header & Nav */
+
+.logo{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 72px;
+  color: white;
+  text-align: center
+ }
+
+header{
+ background-color: #000000;
+ margin-bottom: 40px;
+}
+
+header h1{
+ color: #ffffff;
+ text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul{
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a{
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
 
 /*-- General Styles --*/
 body{
-  background-color: rgb(139, 140, 160);
+  background-color: #808080;
   margin: 0px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-header{
-  height: 140px;
-  background-color: rgb(0, 0, 0);
 }
 
 footer{
@@ -16,57 +59,62 @@ footer{
   height: 75px;
 }
 
-h1, h2, h3{
- text-align: center
+section{
+  margin-bottom: 100px;
 }
 
-header h2{
-  color: white;
-  text-align: center
+h1, h2, h3, h4{
+ text-align: center;
 }
 
 footer p{
  color: white;
  padding: 27px;
  }
-/*-- Used to sytle the name at the top of the page--*/
-.logo{
- font-family: 'Times New Roman', Times, serif;
- font-size: 72px;
- color: white;
- text-align: center
-}
-/*-- used center the profil picture--*/
-.picCenter{
-  margin-left:auto;
-  margin-right:auto;
-  display:block;
-  width: 50%;
+
+ img {
+  width: 100%;
 }
 
-.textCenter{
-  text-align: center;
+.lightBackground{
+  background-color: silver;
 }
 
-a {
-	font-weight: 700;
-	text-decoration: none;	
-}
-a:link { color: blue; }
-a:visited { color: purple; }
-a:hover { color: lightblue; }
-a:active { color: red; }
-/*-- used to remove border around the webpage--*/ 
-.margin{
-  margin: 75px,20px;
-}
-/*-- Used to center the ordered and unordered list --*/
-.center{
-  width: 100px;
-  margin:0 auto;
+.labelColor{
+  color: #000000;
 }
 
-hr{
-  border-color:black;
-  width: 350px;
+ /* form styling */
+ form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: gray;
+  font-family: arial;
+}
+
+form textarea {
+  height: 4.75rem;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+form input[type="text"] {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* desktop view */
+@media all and (min-width: 800px) {
+  section,
+  h1 {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
 }
